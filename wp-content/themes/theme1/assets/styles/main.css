@@ -1,0 +1,124 @@
+body{
+  margin:0;
+  font-size:16px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'PT Sans Narrow', sans-serif;
+  color:#FF0060;
+}
+
+a:hover{
+  color:#FF0060;
+  text-decoration: underline;
+}
+
+header {
+  background:#FFDBE9;
+  padding-top:30px;
+  padding-bottom:0px;
+  text-align: center;
+  max-height: 25%;
+  
+}
+
+
+h1 a{
+  color: #000000
+}
+
+header h1 {
+font-weight: bold;
+text-transform: uppercase;
+color: white;
+
+}
+
+header h2{
+  color: #FF0060
+}
+
+.logo {
+   
+  height: auto;
+  max-width: 100px;
+  margin-left: 0px;
+}
+
+.thumbnail img {
+ max-width: 100px;
+ height: auto;
+ margin: 10px;
+
+}
+
+h3{
+  padding-top: 30px;
+  color: black;
+}
+
+article{
+display: inline-flex;
+justify-content: space-between;
+
+}
+
+.identite {
+margin: auto;
+}
+
+.identite .femme a{
+  color: #BD2C8A
+}
+
+.identite .nongenre a{
+  color: #007067
+}
+
+.identite .homme a{
+  color: #27166D
+}
+
+#content{
+  margin: 20px;
+}
+.profil{
+  background-color: #F3F3F3;
+  box-shadow:2px 2px 2px #EAEAEA;
+  border-radius: 10px;
+  margin: 5%;
+  border: 1px #D8D8D8 dotted;
+}
+.profil_picture{
+  display: block;
+  text-align: center;
+  margin: auto;
+  text-align: center;
+}
+
+.profil_name{
+  color: #81409F;
+  text-align: center;
+  font-size: xx-large;
+}
+
+.profil_date_inscription{
+  text-align: center;
+}
+
+.pagination{
+  text-align: center;
+  color: #FF0074
+}
+
+#footer {
+ 
+  background:#FFDBE9;
+  padding-top:30px;
+  padding-bottom:0px;
+  margin-bottom: 0;
+  text-align: center;
+  max-height: 25%;
+  font-size: small;
+}
