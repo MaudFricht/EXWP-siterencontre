@@ -9,7 +9,7 @@
     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
     $args=array(
       'post_type' => 'profil',
-      'posts_per_page' => 6,
+      'posts_per_page' => 12,
       'orderby' => 'date',
 	    'order'   => 'DESC',
       'paged' => $paged,
@@ -23,7 +23,9 @@
 
     ?>
       <article class="col-sm-6">
-        <?php
+        
+        <div id="new-profils">
+            <?php 
             if(has_post_thumbnail())
             {
               echo '<div class="thumbnail">';
@@ -59,6 +61,7 @@
           ?>
           
         </div>
+        <div class="new-profil">
         
       </article>
       <?php

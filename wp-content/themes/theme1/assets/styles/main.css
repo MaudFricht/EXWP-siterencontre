@@ -58,14 +58,15 @@ h3{
   color: black;
 }
 
-article{
-display: inline-flex;
-justify-content: space-between;
 
+#new-profils {
+background: #278493;
 }
+
 
 .identite {
 margin: auto;
+background: #4F9634;
 }
 
 .identite .femme a{
@@ -107,9 +108,14 @@ margin: auto;
   text-align: center;
 }
 
+.description{
+  text-align: center;
+  color: #9E094A;
+}
+
 .pagination{
   text-align: center;
-  color: #FF0074
+  color: #FF0074;
 }
 
 #footer {

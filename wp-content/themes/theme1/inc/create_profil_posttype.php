@@ -58,6 +58,16 @@ $labels = array(
     
     register_taxonomy( $taxonomy, $object_type, $args );
 
+     $taxonomy = "recherche";
+    $object_type = array("profil");
+    $args = array(
+          'label' => __( 'Type de personne recherchée' ),
+          'rewrite' => array( 'slug' => 'recherche' ),
+          'hierarchical' => false,
+      );
+    
+    register_taxonomy( $taxonomy, $object_type, $args );
+
   
 }
 

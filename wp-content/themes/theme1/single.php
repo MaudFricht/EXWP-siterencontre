@@ -28,12 +28,12 @@
                 Je suis <?php the_field('genre'); ?></br>
                 J'ai <?php the_field('age'); ?> ans</br>
                 Je viens de <?php the_field('region'); ?></br>
-                Je cherche <?php the_field('cherche'); ?></br>
+                Je cherche <?php the_field('cherche'); ?></br></br>
                 Mes activités sont </br>
                 <ul classe="profil_activity"><?php the_field('activités'); ?></ul></br>
             </p>
 
-            <p class="description">Je suis ici... </br><?php the_field('ma_description'); ?></p>
+            <div class="description"><p>Je suis ici... </br><?php the_field('ma_description'); ?></p></div>
 
               
     <?php
