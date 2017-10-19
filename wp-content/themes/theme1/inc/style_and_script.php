@@ -10,7 +10,7 @@ wp_enqueue_script('bootstrap_script');
 wp_register_script('main_script', JS_URL.'/main.js', array('jquery'),'1.1', true);
 wp_enqueue_script('main_script');
 
-wp_register_style( 'googlefont_style', 'https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow' );
+wp_register_style( 'googlefont_style', 'https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow|Nothing+You+Could+Do' );
 wp_enqueue_style( 'googlefont_style' );
 
 // enregistrement d'un nouveau style

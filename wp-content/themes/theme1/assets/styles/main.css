@@ -1,31 +1,37 @@
-body{
-  margin:0;
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin:0px;
   font-size:16px;
+
   font-family: 'PT Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'PT Sans Narrow', sans-serif;
-  color:#FF0060;
+  color:#B01055;
 }
 
 a:hover{
-  color:#FF0060;
+  color:#B01055;
   text-decoration: underline;
 }
 
 header {
-  background:#FFDBE9;
+  background: white;
   padding-top:30px;
-  padding-bottom:0px;
+  padding-bottom:10px;
   text-align: center;
   max-height: 25%;
-  
+  border-bottom: medium #B01055;
+  box-shadow: 2px 2px 1px #B01055;
 }
 
 
-h1 a{
-  color: #000000
+a{
+  color: #000000;
 }
 
 header h1 {
@@ -36,7 +42,7 @@ color: white;
 }
 
 header h2{
-  color: #FF0060
+  color: #B01055;
 }
 
 .logo {
@@ -46,12 +52,17 @@ header h2{
   margin-left: 0px;
 }
 
-.thumbnail img {
- max-width: 100px;
- height: auto;
- margin: 10px;
-
+.thumbnail {
+ width: 300px; 
 }
+
+.thumbnail img {
+ width: 100px;
+ height: auto;
+ border: 3px #B01055;
+ 
+}
+
 
 h3{
   padding-top: 30px;
@@ -59,49 +70,69 @@ h3{
 }
 
 
-#new-profils {
-background: #278493;
+.intro{
+  margin: 20px;
 }
 
+.new-profils{
+  padding:10px; 
+  background: white;
+  text-align: center;
+
+}
 
 .identite {
 margin: auto;
-background: #4F9634;
+
 }
 
 .identite .femme a{
-  color: #BD2C8A
+  color: #B01055;
 }
 
 .identite .nongenre a{
-  color: #007067
+  color: #007067;
 }
 
 .identite .homme a{
-  color: #27166D
+  color: #27166D;
 }
 
-#content{
-  margin: 20px;
+
+#container{
+  margin: auto;
+  padding: 10px;
 }
-.profil{
-  background-color: #F3F3F3;
-  box-shadow:2px 2px 2px #EAEAEA;
-  border-radius: 10px;
-  margin: 5%;
-  border: 1px #D8D8D8 dotted;
+
+/* PAGE single.php */
+
+.intro {
+  margin-left: 6%;
 }
+
+.profil {
+  
+  margin: 10%;
+  margin-top: 0%;
+  padding: 20px;
+  background: #F4F7F5;
+  color: black;
+  border-radius: 30PX;
+
+}
+
 .profil_picture{
   display: block;
   text-align: center;
   margin: auto;
-  text-align: center;
+  
 }
 
 .profil_name{
-  color: #81409F;
+  color: #B01055;
   text-align: center;
   font-size: xx-large;
+  font-family: 'Nothing You Could Do', cursive;
 }
 
 .profil_date_inscription{
@@ -110,8 +141,10 @@ background: #4F9634;
 
 .description{
   text-align: center;
-  color: #9E094A;
 }
+
+
+/*FOOTER */
 
 .pagination{
   text-align: center;
@@ -119,12 +152,12 @@ background: #4F9634;
 }
 
 #footer {
- 
-  background:#FFDBE9;
+  display: block;
   padding-top:30px;
-  padding-bottom:0px;
-  margin-bottom: 0;
+  padding-bottom:5px;
+  margin-top: 5%;
   text-align: center;
   max-height: 25%;
   font-size: small;
+  box-shadow: 0px -2px 5px #B01055;
 }

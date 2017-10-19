@@ -1,15 +1,15 @@
 <?php get_header(); //appel du template header.php  ?>
 
 <div id="content" class="container">
-  <div class="row">
-    <h3 class="col-sm-6">Quelques profils qui pourraient vous interesser...</h3>
+  <div class="row intro">
+    <h3 class="col-sm-12">Quelques profils qui pourraient vous interesser...</h3>
   </div>
   <div class="row">
    <?php
     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
     $args=array(
       'post_type' => 'profil',
-      'posts_per_page' => 12,
+      'posts_per_page' => 6,
       'orderby' => 'date',
 	    'order'   => 'DESC',
       'paged' => $paged,
@@ -22,9 +22,8 @@
         $the_query->the_post();
 
     ?>
-      <article class="col-sm-6">
+      <article class="new-profils col-xs-12 col-sm-6 col-md-4">
         
-        <div id="new-profils">
             <?php 
             if(has_post_thumbnail())
             {
@@ -33,13 +32,13 @@
               echo '</div>';
             }
          ?>
-        <div class='identite'>
+        <div class='identite thumbnail'>
           
           <?php if( get_field('genre') == 'une femme' ){ ?>
             <div class="femme">
               <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
               <p><?php the_field('ma_description'); ?></p>
-              <p>Inscrit le <?php the_time('F jS, Y') ?></p>
+              <p>Recherche <?php the_field('cherche') ?></p>
             </div>
           <?php }
 
@@ -47,7 +46,7 @@
             <div class="homme">
               <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
               <p><?php the_field('ma_description'); ?></p>
-              <p>Inscrit le <?php the_time('F jS, Y') ?></p>
+              <p>Recherche <?php the_field('cherche') ?></p>
             </div>
           <?php }
 
@@ -55,13 +54,12 @@
             <div class="nongenre">
               <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
               <p><?php the_field('ma_description'); ?></p>
-              <p>Inscrit le <?php the_time('F jS, Y') ?></p>
+              <p>Recherche <?php the_field('cherche') ?></p>
             </div>
           <?php }
           ?>
           
         </div>
-        <div class="new-profil">
         
       </article>
       <?php

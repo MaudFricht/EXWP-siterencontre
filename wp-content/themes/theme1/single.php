@@ -1,7 +1,7 @@
 <?php get_header(); //appel du template header.php  ?>
 
 <div id="content">
-    <h3>Un profil qui pourrait vous plaire...</h3>
+    <h3 class='intro'>Le profil de...</h3>
     
     <div class="profil">
     <?php
@@ -10,7 +10,7 @@
         while (have_posts()){
             the_post();
     ?>
-            <h3 class="profil_name">
+     <h3 class="profil_name">
                 <?php the_title(); ?>
             </h3>
             
@@ -33,7 +33,7 @@
                 <ul classe="profil_activity"><?php the_field('activités'); ?></ul></br>
             </p>
 
-            <div class="description"><p>Je suis ici... </br><?php the_field('ma_description'); ?></p></div>
+            <div class="description"><p>Qui sui-je? </br><?php the_field('ma_description'); ?></p></div>
 
               
     <?php
