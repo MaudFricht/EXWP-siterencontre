@@ -11,7 +11,7 @@
       'post_type' => 'profil',
       'posts_per_page' => 6,
       'orderby' => 'date',
-	    'order'   => 'DESC',
+      'order'   => 'DESC',
       'paged' => $paged,
     );
     $the_query = new WP_Query( $args );

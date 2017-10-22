@@ -4,7 +4,7 @@ function ajout_custom_profil(){
 
 $labels = array(
         'name'               => 'Profils',
-        'singular_name'      => 'Profl',
+        'singular_name'      => 'Profil',
         'all_items'          => 'Tout les profils',
         'add_new'            => 'Créer un profil',
         'add_new_item'       => 'Créer un nouveau profil',
@@ -32,6 +32,16 @@ $labels = array(
         'exclude_from_search' => false,
         'has_archive'         => false,
         'query_var'           => true,
+        'capabilities' => array(
+                          'edit_post'          => 'edit_profil', 
+                          'read_post'          => 'read_profil', 
+                          'delete_post'        => 'delete_profil', 
+                          'edit_posts'         => 'edit_profils', 
+                          'edit_others_posts'  => 'edit_others_profils', 
+                          'publish_posts'      => 'publish_profils',       
+                          'read_private_posts' => 'read_private_profils', 
+                          'create_posts'       => 'edit_profils', 
+                      ),
         'can_export'          => true,
         'rewrite'             => array( 'slug' => $post_type ),
     );
@@ -58,16 +68,7 @@ $labels = array(
     
     register_taxonomy( $taxonomy, $object_type, $args );
 
-     $taxonomy = "recherche";
-    $object_type = array("profil");
-    $args = array(
-          'label' => __( 'Type de personne recherchée' ),
-          'rewrite' => array( 'slug' => 'recherche' ),
-          'hierarchical' => false,
-      );
-    
-    register_taxonomy( $taxonomy, $object_type, $args );
-
+  
   
 }
 
